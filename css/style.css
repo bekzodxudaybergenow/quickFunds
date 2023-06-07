@@ -1,3 +1,105 @@
+:root {
+  --POLISHED-PINE: #50AC97;
+  --ANTI-FLASH-WHITE: #F0F1F3;
+  --COLUMBIA-BLUE: #C6D8E4;
+  --MYRTLE-GREEN: #2A6877;
+  --JAPANESE-INDIGO: #1B424C;
+  --WHITE: #fff;
+  --BLACK: #000;
+  --OUTER-SPACE: #424545;
+  --GRAY: #7F7A7A;
+  --UFO-GREEN: #39C260;
+  --raleway: "Raleway", sans-serif;
+  --dm-sans: "DM Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/DMSans-Regular.woff2") format("woff2"), url("../fonts/DM_Sans/DMSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/DMSans-Medium.woff2") format("woff2"), url("../fonts/DM_Sans/DMSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/DMSans-Bold.woff2") format("woff2"), url("../fonts/DM_Sans/DMSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.logo a {
+  outline-color: var(--POLISHED-PINE);
+}
+.logo img {
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--OUTER-SPACE);
+  letter-spacing: 0.5px;
+  transition: ease-in-out 0.2s;
+  outline-color: var(--POLISHED-PINE);
+}
+.nav-link + * {
+  margin-left: 48px;
+}
+.nav-link:hover {
+  color: var(--POLISHED-PINE);
+}
+
+.contact-us-btn.btn {
+  background-color: var(--JAPANESE-INDIGO);
+  transition: ease-in-out 0.2s;
+  outline-color: var(--POLISHED-PINE);
+}
+.contact-us-btn.btn:hover {
+  background-color: var(--MYRTLE-GREEN);
+}
+
 *,
 *::before,
 *::after {
@@ -13,8 +115,28 @@ body {
   color: var(--OUTER-SPACE);
 }
 
+.wrapper-row {
+  height: 100vh;
+}
+
 .container {
   max-width: 1284px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.btn {
+  max-width: 126px;
+  width: 100%;
+  height: 48px;
+  font-family: var(--dm-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: var(--WHITE);
+  background-color: var(--MYRTLE-GREEN);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,6 @@
+@import './vars';
+@import './header';
+
 *,
 *::before,
 *::after {
@@ -13,9 +16,25 @@ body {
     color: var(--OUTER-SPACE);
 }
 .wrapper-row {
+    height: 100vh;
 }
 .container {
     max-width: 1284px;
     padding: 0 20px;
     margin: 0 auto;
+}
+.btn {
+    max-width: 126px;
+    width: 100%;
+    height: 48px;
+    font-family: var(--dm-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: var(--WHITE);
+    background-color: var(--MYRTLE-GREEN);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
 }
