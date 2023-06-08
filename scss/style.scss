@@ -1,5 +1,6 @@
 @import './vars';
 @import './header';
+@import './home';
 
 *,
 *::before,
@@ -14,6 +15,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: var(--OUTER-SPACE);
+    letter-spacing: 0.5px;
 }
 .wrapper-row {
     height: 100vh;
@@ -24,6 +26,9 @@ body {
     margin: 0 auto;
 }
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 126px;
     width: 100%;
     height: 48px;
@@ -32,6 +37,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.5px;
+    text-decoration: none;
     color: var(--WHITE);
     background-color: var(--MYRTLE-GREEN);
     border-radius: 50px;
