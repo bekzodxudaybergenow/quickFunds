@@ -164,6 +164,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--dm-sans);
   font-weight: 400;
