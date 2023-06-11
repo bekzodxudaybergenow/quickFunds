@@ -65,6 +65,7 @@
     border-radius: 50px;
     color: var(--JAPANESE-INDIGO);
     background-color: transparent;
+    outline-color: var(--POLISHED-PINE);
     margin-top: auto;
     transition: ease-in-out .2s;
 
@@ -80,6 +81,7 @@
     font-weight: 500;
     font-size: 18px;
     transition: ease-in-out .2s;
+    outline-color: var(--POLISHED-PINE);
 
     &:hover {
         background-color: var(--JAPANESE-INDIGO);
