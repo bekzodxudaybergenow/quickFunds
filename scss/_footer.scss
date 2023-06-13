@@ -1,0 +1,120 @@
+.footer {
+    background-image: url('../img/footer/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 152px 0;
+    color: var(--WHITE);
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+.footer-content {
+    max-width: 355px;
+}
+.footer-content-logo {
+    display: inline-block;
+    margin-bottom: 24px;
+    outline-color: var(--POLISHED-PINE);
+
+    & img {
+        display: block;
+        width: 175px;
+    }
+}
+.footer-content-desc {
+    font-family: var(--raleway);
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin-bottom: 24px;
+}
+.footer-content-socials {
+    display: flex;
+    column-gap: 16px;
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 20px;
+        width: 20px;
+        padding: 5px;
+        background-color: var(--WHITE);
+        border-radius: 50px;
+        outline-color: var(--POLISHED-PINE);
+
+    }
+    & a:nth-child(1) {
+        padding: 6px;
+    }
+    & svg {
+        display: block;
+
+        & path {
+            width: 100%;
+        }
+    }
+}
+.footer-connection {
+    max-width: 506.73px;
+    width: 100%;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    list-style: none;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-item-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 24px;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 68px;
+        height: 1px;
+        margin-top: 8px;
+        background-color: var(--WHITE);
+    }
+}
+.footer-item-link {
+    font-family: var(--raleway);
+    font-weight: 500;
+    color: var(--WHITE);
+    text-decoration: none;
+    transition: ease-in-out .2s;
+    outline-color: var(--POLISHED-PINE);
+
+    & + * {
+        margin-top: 16px;
+    }
+    &:hover {
+        color: var(--POLISHED-PINE);
+    }
+}
+.footer-item-contact {
+    display: flex;
+
+    & span {
+        padding-right: 18px;
+        & svg {
+            display: block;
+        }
+    }
+}
